@@ -489,12 +489,6 @@
                         <div class="col-md-6">
                             <input type="text" class="form-control form-control-lg" id="empresa" placeholder="Nome do Estabelecimento" required>
                         </div>
-                        <div class="col-md-6">
-                            <input type="tel" class="form-control form-control-lg" id="celular" placeholder="Número de Celular" required>
-                        </div>
-                        <div class="col-md-6">
-                            <input type="email" class="form-control form-control-lg" id="email" placeholder="Email" required>
-                        </div>
                         <div class="col-12">
                             <button type="submit" class="btn btn-light btn-lg">Falar com Consultor</button>
                         </div>
@@ -593,10 +587,8 @@
             
             const nome = document.getElementById('nome').value;
             const empresa = document.getElementById('empresa').value;
-            const celular = document.getElementById('celular').value;
-            const email = document.getElementById('email').value;
             
-            const mensagem = `Olá! Meu nome é ${nome} e sou do estabelecimento ${empresa}. Meu celular é ${celular} e meu email é ${email}. Gostaria de agendar uma DEMO.`;
+            const mensagem = `Olá! Meu nome é ${nome} e sou do estabelecimento ${empresa}. Gostaria de agendar uma DEMO.`;
             const numeroWhatsApp = '5511915476490'; // Número do WhatsApp do rodapé
             
             const urlWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensagem)}`;
